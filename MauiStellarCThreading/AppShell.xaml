@@ -11,4 +11,9 @@
         ContentTemplate="{DataTemplate views:StartPageView}"
         Route="StartPageView" />
 
+    <!-- Zodiac Sign Page  Content -->
+    <ShellContent
+        ContentTemplate="{DataTemplate views:ZodiacSignView}"
+        Route="ZodiacSignView" />
+
 </Shell>
