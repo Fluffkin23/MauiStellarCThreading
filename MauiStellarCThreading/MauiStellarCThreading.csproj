@@ -71,12 +71,20 @@
 	  <None Remove="Resources\Images\scorpio_sign.png" />
 	  <None Remove="Resources\Images\taurus_sign.png" />
 	  <None Remove="Resources\Images\virgo_sign.png" />
+	  <None Remove="Resources\zodiac_Signs.csv" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Include="Resources\zodiac_Signs.csv">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </EmbeddedResource>
 	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
+		<PackageReference Include="System.Reflection" Version="4.3.0" />
 	</ItemGroup>
 
 	<ItemGroup>
