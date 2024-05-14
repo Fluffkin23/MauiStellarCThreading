@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MauiStellarCThreading.ViewModel
 {
-    internal class ZodiacViewModel
+    public class ZodiacViewModel
     {
     }
 }
