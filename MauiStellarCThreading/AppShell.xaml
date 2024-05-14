@@ -16,4 +16,9 @@
         ContentTemplate="{DataTemplate views:ZodiacSignView}"
         Route="ZodiacSignView" />
 
+    <!-- Pls Page Shell Content -->
+    <ShellContent
+    ContentTemplate="{DataTemplate views:HoroscopePageView}"
+    Route="HoroscopePageView" />
+
 </Shell>

@@ -4,7 +4,8 @@
              x:Class="MauiStellarCThreading.Views.StartPageView"
              xmlns:vm="clr-namespace:MauiStellarCThreading.ViewModel"
              NavigationPage.HasNavigationBar="False"
-             Title="StartPageView">
+             BackgroundImageSource="galaxybackground.jpg">
+             
     
     <ContentPage.BindingContext>
         <vm:StartPageViewModel/>
