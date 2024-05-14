@@ -1,12 +1,50 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MauiStellarCThreading.Views.HoroscopePageView"
-             Title="HoroscopePageView">
-    <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+             x:Class="MauiStellarCThreading.Views.HoroscopePageView">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Back"
+             Priority="0"
+             Order="Primary"
+             Command="{Binding GoBackCommand}" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label">
+                <Setter Property="TextColor" Value="#333"/>
+                <Setter Property="FontFamily" Value="Arial, sans-serif"/>
+                <Setter Property="FontSize" Value="16"/>
+            </Style>
+            <Style TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#4A90E2"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="Margin" Value="5"/>
+                <Setter Property="FontFamily" Value="Arial, sans-serif"/>
+                <Setter Property="CornerRadius" Value="5"/>
+            </Style>
+            <Style TargetType="Entry">
+                <Setter Property="Margin" Value="0,5"/>
+                <Setter Property="FontFamily" Value="Arial, sans-serif"/>
+                <Setter Property="FontSize" Value="16"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ScrollView VerticalOptions="FillAndExpand">
+        <StackLayout Padding="30" Spacing="15">
+            <Label Text="Enter your Zodiac Sign:" FontAttributes="Bold" TextColor="White"/>
+            <Entry x:Name="signEntry" Placeholder="e.g., Leo" HorizontalOptions="FillAndExpand" TextColor="white"/>
+            <Button Text="Get Horoscope" Command="{Binding LoadHoroscopeCommand}"
+                CommandParameter="{Binding Text, Source={x:Reference signEntry}}"/>
+            <Label Text="{Binding Horoscope.Number, StringFormat='Lucky Number: {0}'}" Padding="10" TextColor="White"/>
+            <Label Text="{Binding Horoscope.Color, StringFormat='Lucky Color: {0}'}" Padding="10" TextColor="White"/>
+            <Label Text="{Binding Horoscope.Mantra, StringFormat='Mantra: {0}'}" HorizontalOptions="FillAndExpand" LineBreakMode="WordWrap" Padding="10" TextColor="White"/>
+            <Label Text="{Binding Horoscope.Remedy, StringFormat='Remedy: {0}'}" HorizontalOptions="FillAndExpand" LineBreakMode="WordWrap" Padding="10" TextColor="White"/>
+            <Frame Padding="10" CornerRadius="10" BorderColor="Gray" HasShadow="True" BackgroundColor="Transparent">
+                <Label Text="{Binding Horoscope.Prediction}" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" TextColor="White"/>
+            </Frame>
+            <Button Text="Download as CSV" Command="{Binding SaveAsCsvCommand}"/>
+            <Button Text="Download as XAML" Command="{Binding SaveAsXamlCommand}"/>
+        </StackLayout>
+    </ScrollView>
 </ContentPage>
