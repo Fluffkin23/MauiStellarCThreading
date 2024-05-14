@@ -11,7 +11,7 @@ using System.Windows.Input;
 
 namespace MauiStellarCThreading.ViewModel
 {
-    public class HoroscopeViewModel
+    public class HoroscopeViewModel : INotifyPropertyChanged
     {
         private Horoscope _horoscope;
         private HoroscopeService _service = new HoroscopeService();
