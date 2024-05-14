@@ -1,8 +1,11 @@
+using MauiStellarCThreading.ViewModel;
+
 namespace MauiStellarCThreading.Views;
 
 public partial class HoroscopePageView : ContentPage
 {
-	public HoroscopePageView()
+    private HoroscopeViewModel _viewModel;
+    public HoroscopePageView()
 	{
 		InitializeComponent();
 
