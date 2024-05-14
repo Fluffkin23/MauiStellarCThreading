@@ -13,8 +13,7 @@ public partial class ZodiacSignView : ContentPage
         // var zodiacService = new ZodiacService(fileIOService);
         //this.BindingContext = new ZodiacViewModel(zodiacService);
 
-
-        
+        BindingContext = new ZodiacViewModel(new ZodiacService(new FileIOService()));
 
     }
 }
