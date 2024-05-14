@@ -57,6 +57,23 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Resources\Images\aquarius_sign.png" />
+	  <None Remove="Resources\Images\aries_sign.png" />
+	  <None Remove="Resources\Images\cancer_sign.png" />
+	  <None Remove="Resources\Images\capricon_sign.png" />
+	  <None Remove="Resources\Images\galaxybackground.jpg" />
+	  <None Remove="Resources\Images\gemini_sign.png" />
+	  <None Remove="Resources\Images\horoscope_button.png" />
+	  <None Remove="Resources\Images\leo_sign.png" />
+	  <None Remove="Resources\Images\libra_sign.png" />
+	  <None Remove="Resources\Images\pisces_sign.png" />
+	  <None Remove="Resources\Images\saggitarius_sign.png" />
+	  <None Remove="Resources\Images\scorpio_sign.png" />
+	  <None Remove="Resources\Images\taurus_sign.png" />
+	  <None Remove="Resources\Images\virgo_sign.png" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
