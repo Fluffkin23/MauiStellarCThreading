@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace MauiStellarCThreading.Services
 {
-    internal class ZodiacService
+    public class ZodiacService
     {
+
     }
 }
