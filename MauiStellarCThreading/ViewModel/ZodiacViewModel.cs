@@ -51,7 +51,7 @@ namespace MauiStellarCThreading.ViewModel
             catch (Exception ex)
             {
                 // Log any errors during the loading process.
-                Console.WriteLine($"Error loading zodiac signs: {ex.Message}");
+                System.Diagnostics.Debug.WriteLine($"Error loading zodiac signs: {ex.Message}");
             }
         }
 
