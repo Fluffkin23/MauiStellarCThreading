@@ -127,7 +127,7 @@ namespace MauiStellarCThreading.ViewModel
         }
 
         // Method to navigate back to the previous view.
-        private async Task goBack()
+         private async Task goBack()
         {
             try
             {
