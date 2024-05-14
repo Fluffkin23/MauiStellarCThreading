@@ -132,7 +132,7 @@ namespace MauiStellarCThreading.ViewModel
             try
             {
                 // Navigate to HoroscopePage using Shell navigation
-                await Shell.Current.GoToAsync("///ZodiaSignView");
+                await Shell.Current.GoToAsync("///ZodiacSignView");
             }
             catch (Exception ex)
             {
