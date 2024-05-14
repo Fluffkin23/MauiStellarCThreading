@@ -14,7 +14,7 @@ public partial class ZodiacSignView : ContentPage
         //this.BindingContext = new ZodiacViewModel(zodiacService);
 
 
-        
+        // rsgfd
 
     }
 }
