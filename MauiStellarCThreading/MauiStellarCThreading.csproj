@@ -71,6 +71,13 @@
 	  <None Remove="Resources\Images\scorpio_sign.png" />
 	  <None Remove="Resources\Images\taurus_sign.png" />
 	  <None Remove="Resources\Images\virgo_sign.png" />
+	  <None Remove="Resources\zodiac_Signs.csv" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Include="Resources\zodiac_Signs.csv">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </EmbeddedResource>
 	</ItemGroup>
 
 	<ItemGroup>

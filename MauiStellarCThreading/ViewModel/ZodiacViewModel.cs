@@ -38,7 +38,7 @@ namespace MauiStellarCThreading.ViewModel
             try
             {
                 // Fetch zodiac signs using the service.
-                var signs = await _zodiacService.loadZodiacSignsAsync("MauiStellar2.Resources.zodiac_Signs.csv");
+                var signs = await _zodiacService.loadZodiacSignsAsync("MauiStellarCThreading.Resources.zodiac_Signs.csv");
                 foreach (var sign in signs)
                 {
                     // Use Dispatch to ensure updates to ObservableCollection happen on the UI thread
